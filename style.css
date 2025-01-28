@@ -1,6 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+body {
+  font-family: "Roboto", "serif";
+}
+
 .container {
-  max-width: 1140px;
+  max-width: 1130px;
   padding: 0 15px;
+  margin: 0 auto;
+}
+
+.promo {
+  background-image: url("./images/Background.jpg");
+  height: 800px;
+}
+
+.promo__subtitle {
+  font-size: 48px;
+  font-weight: 700;
+  max-width: 532px;
+  margin: 0;
+}
+
+.promo__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 130px;
+  left: -30px;
+  position: relative;
+  z-index: 1;
+}
+
+.promo__title::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: #ffa501;
+  border-radius: 50%;
+  position: relative;
+  top: 12px;
+  left: 23px;
+  z-index: -1;
+}
+
+.promo__buttons {
+  margin-top: 25px;
+}
+
+.promo__button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  text-decoration-line: none;
+}
+
+.promo__button--yellow {
+  background-color: #ffa501;
+}
+
+.social-media {
+  position: relative;
+  top: 366px;
+  left: -105px;
+  display: flex;
+  align-items: center;
+  transform: rotate(270deg);
+  width: 338px;
+  justify-content: space-between;
+}
+
+.social-media__title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.social-media__icons {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+}
+
+.social-media__line {
+  border: 1px solid black;
+  height: 0px;
+  width: 70px;
 }
