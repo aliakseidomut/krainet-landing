@@ -10,17 +10,48 @@
   <body>
     <main class="main">
       <section class="promo">
+        <button class="burger-menu__button" id="burger-button">
+          <div class="burger-menu__button__line"></div>
+          <div class="burger-menu__button__line"></div>
+          <div class="burger-menu__button__line"></div>
+        </button>
+        <nav class="burger-menu" id="burger-menu">
+          <button class="burger-menu__close-button" id="close-button">
+            <img src="/images/Close.svg" alt="" />
+          </button>
+          <ul class="burger-menu__list">
+            <li><a href="#">ПРО МЕНЯ</a></li>
+            <li><a href="#">МОЙ ОПЫТ</a></li>
+            <li><a href="#">МОИ НАВЫКИ</a></li>
+            <li><a href="#">МОИ РАБОТЫ</a></li>
+            <li><a href="#">ПРАЙС-ЛИСТ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+
+          <ul class="burger-menu__icons icons">
+            <li class="burger-menu__icon icon">
+              <a href="#"><img src="./images/Github.svg" alt="" /></a>
+            </li>
+            <li class="burger-menu__icon icon">
+              <a href="#"><img src="/images/Instagram.svg" alt="" /></a>
+            </li>
+            <li class="burger-menu__icon icon">
+              <a href="#"><img src="/images/Facebook.svg" alt="" /></a>
+            </li>
+          </ul>
+        </nav>
+
         <div class="social-media">
           <h3 class="social-media__title">Социальные медиа</h3>
           <div class="social-media__line"></div>
-          <ul class="social-media__icons">
-            <li class="social-media__icon">
+          <ul class="social-media__icons icons">
+            <li class="social-media__icon icon">
               <a href="#"><img src="./images/Github.svg" alt="" /></a>
             </li>
-            <li class="social-media__icon">
+            <li class="social-media__icon icon">
               <a href="#"><img src="/images/Instagram.svg" alt="" /></a>
             </li>
-            <li class="social-media__icon">
+            <li class="social-media__icon icon">
               <a href="#"><img src="/images/Facebook.svg" alt="" /></a>
             </li>
           </ul>
@@ -41,4 +72,5 @@
       </section>
     </main>
   </body>
+  <script src="./script.js"></script>
 </html>
