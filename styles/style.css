@@ -47,20 +47,30 @@ body {
 }
 
 .promo__buttons {
-  margin-top: 25px;
+  margin-top: 45px;
+  display: flex;
+  gap: 10px;
 }
 
 .promo__button {
-  display: inline-block;
-  padding: 12px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   font-weight: 700;
   color: black;
   text-decoration-line: none;
+  width: 135px;
+  height: 45px;
 }
 
 .promo__button--yellow {
   background-color: #ffa501;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.promo__button--transparent {
+  background-color: transparent;
 }
 
 .social-media {
@@ -79,17 +89,23 @@ body {
   font-weight: 700;
 }
 
-.icons {
+.social-media__line {
+  border: 1px solid black;
+  height: 0px;
+  width: 70px;
+}
+
+.social-media__icons {
   display: flex;
   list-style: none;
   padding: 0;
   gap: 15px;
 }
 
-.social-media__line {
-  border: 1px solid black;
-  height: 0px;
-  width: 70px;
+@media (max-width: 1440px) {
+  .social-media {
+    opacity: 0;
+  }
 }
 
 /* BURGER MENU */
@@ -107,17 +123,17 @@ body {
   align-items: end;
 }
 
-.burger-menu__button__line {
+.burger-menu__button-line {
   height: 3px;
   background-color: black;
 }
 
-.burger-menu__button__line:nth-child(1),
-.burger-menu__button__line:nth-child(3) {
+.burger-menu__button-line:nth-child(1),
+.burger-menu__button-line:nth-child(3) {
   width: 30px;
 }
 
-.burger-menu__button__line:nth-child(2) {
+.burger-menu__button-line:nth-child(2) {
   width: 36px;
 }
 
@@ -164,14 +180,22 @@ body {
   margin: 15px 0;
 }
 
-.burger-menu__list a {
+.burger-menu__link {
   color: white;
   text-decoration: none;
 }
 
-.burger-menu__icons {
+.burger-menu__social-icons {
   justify-content: center;
   margin-top: 450px;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+}
+
+.burger-menu__social-icon a {
+  color: white;
 }
 
 /* EXPERIENCE */
@@ -218,6 +242,15 @@ body {
 .resume {
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+@media (max-width: 1024px) {
+  .resume {
+    justify-content: center;
+  }
 }
 
 .resume__info {
@@ -281,11 +314,18 @@ body {
   display: flex;
   gap: 68px;
   justify-content: center;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .contacts__image {
-  width: 100%;
-  height: auto;
+  height: 600px;
+}
+
+@media (max-width: 425px) {
+  .contacts__image {
+    display: none;
+  }
 }
 
 .contacts__content {
@@ -298,6 +338,7 @@ body {
   left: -30px;
   position: relative;
   z-index: 1;
+  margin: 0;
 }
 
 .contacts__title::before {
@@ -316,6 +357,7 @@ body {
 .contacts__subtitle {
   font-size: 36px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .contacts__line {
@@ -327,6 +369,7 @@ body {
 .contacts__socials-title {
   font-size: 14px;
   font-weight: 700;
+  margin-top: 30px;
 }
 
 .contacts__socials-list {
@@ -334,12 +377,6 @@ body {
   display: flex;
   gap: 20px;
   padding: 0;
-}
-
-.contacts__socials-item {
-}
-
-.contacts__socials-link {
 }
 
 .contacts__socials-icon {
@@ -366,6 +403,7 @@ body {
 .contacts__form-row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contacts__form-group {
@@ -402,7 +440,7 @@ body {
 }
 
 .contacts__form-textarea {
-  width: 585px;
+  max-width: 585px;
   height: 190px;
   resize: none;
 }
@@ -420,6 +458,11 @@ body {
   border: 0;
   width: 219px;
   height: 45px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.contacts__submit:hover {
+  cursor: pointer;
 }
 
 .contacts__form-error {
