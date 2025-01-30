@@ -10,6 +10,8 @@ body {
   margin: 0 auto;
 }
 
+/* PROMO */
+
 .promo {
   background-image: url("./images/Background.jpg");
   height: 800px;
@@ -90,6 +92,8 @@ body {
   width: 70px;
 }
 
+/* BURGER MENU */
+
 .burger-menu__button {
   position: absolute;
   top: 20px;
@@ -168,4 +172,101 @@ body {
 .burger-menu__icons {
   justify-content: center;
   margin-top: 450px;
+}
+
+/* EXPERIENCE */
+
+.experience {
+  margin-top: 120px;
+}
+
+.experience__title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.experience__title::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: #ffa501;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.experience__subtitle {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.experience__line {
+  width: 60px;
+  height: 3px;
+  background-color: #ffa501;
+  margin: 0 auto;
+}
+
+.resume {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume__info {
+  background-image: url(./images/ResumeBg.svg);
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
+.resume__info .title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.resume__info__items {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 45px;
+}
+
+.resume__info__item__header {
+  display: flex;
+  padding-left: 20px;
+}
+
+.resume__info__item__header .icon {
+  width: 25px;
+  height: 25px;
+  margin-top: 15px;
+}
+
+.resume__info__item__header .titles {
+  margin-left: 14px;
+}
+
+.resume__info__item__header .title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.resume__info__item__header .subtitle {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.resume__info__item__text {
+  font-size: 12px;
+  font-weight: 500;
+  max-width: 375px;
+  margin: 0;
 }
