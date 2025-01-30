@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Krainet</title>
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <main class="main">
@@ -58,8 +58,8 @@
         </div>
 
         <div class="container">
-          <h3 class="promo__title">Меня зовут Александра Смит</h3>
-          <h2 class="promo__subtitle">Я web-разработчик из города Москва</h2>
+          <h2 class="promo__title">Меня зовут Александра Смит</h3>
+          <h3 class="promo__subtitle">Я web-разработчик из города Москва</h2>
           <div class="promo__buttons">
             <a href="#" class="promo__button promo__button--yellow"
               >Портфолио</a
@@ -155,7 +155,68 @@
           </div>
         </div>
       </section>
+
+      <section class="contacts">
+        <div class="container contacts__container">
+          <img class="contacts__image" src="./images/Photo.jpg" alt="Фото">
+          <div class="contacts__content">
+            <h2 class="contacts__title">
+              Контакты
+            </h2>
+            <h3 class="contacts__subtitle">Свяжитесь со мной</h3>
+            <div class="contacts__line"></div>
+            <div class="contacts__socials">
+              <h2 class="contacts__socials-title">Любым удобным для вас способом:</h2>
+              <ul class="contacts__socials-list">
+                <li class="contacts__socials-item">
+                  <a href="#" class="contacts__socials-link">
+                    <img src="./images/Facebook.svg" alt="Facebook" class="contacts__socials-icon">
+                  </a>
+                </li>
+                <li class="contacts__socials-item">
+                  <a href="#" class="contacts__socials-link">
+                    <img src="/images/Telegram.svg" alt="Telegram" class="contacts__socials-icon">
+                  </a>
+                </li>
+                <li class="contacts__socials-item">
+                  <a href="#" class="contacts__socials-link">
+                    <img src="/images/Instagram.svg" alt="Instagram" class="contacts__socials-icon">
+                  </a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="contacts__form">
+              <div class="contacts__form-title">Или оставьте ваши данные и я сама вам напишу:</div>
+              <form class="contacts__form-content" id="contact-form">
+                <div class="contacts__form-row">
+                  <div class="contacts__form-group">
+                    <label for="name" class="contacts__form-label">Ваше имя</label>
+                    <input type="text" id="name" name="name" class="contacts__form-input">
+                    <div id="name-error" class="contacts__form-error" style="display: none;"></div>
+                  </div>
+                  <div class="contacts__form-group">
+                    <label for="email" class="contacts__form-label">Ваша почта</label>
+                    <input type="email" id="email" name="email" class="contacts__form-input">
+                    <div id="email-error" class="contacts__form-error" style="display: none;"></div>
+                  </div>
+                </div>
+              
+                <div class="contacts__form-group">
+                  <label for="message" class="contacts__form-label">Ваше сообщение</label>
+                  <textarea id="message" name="message" class="contacts__form-textarea"></textarea>
+                  <div id="message-error" class="contacts__form-error" style="display: none;"></div>
+                </div>
+              
+                <input class="contacts__submit" type="submit" value="Отправить сообщение">
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </main>
   </body>
-  <script src="./script.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
 </html>
